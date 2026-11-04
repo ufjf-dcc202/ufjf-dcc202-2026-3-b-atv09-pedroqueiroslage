@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        header {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: blueviolet;
+        }
+
+        section {
+            background-color: seagreen;
+        }
+
+        nav {
+            background-color: lawngreen;
+        }
+
+        aside {
+            background-color: rgb(133, 75, 128);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 0.1em;
+        }
+
+        .holy-grail {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .holy-grail>header,
+        footer {
+            grid-column: 1 / 4;
+        }
+
+        .holy-grail>section {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article class="holy-grail">
+            <header>
+                <h1>Exemplo 05: Holy Grail</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste esse illum beatae corrupti
+                    voluptatum quaerat recusandae! Fugit, exercitationem! Non, alias obcaecati. Fuga quos, inventore
+                    eveniet optio rerum quo recusandae!</p>
+                <p>Maxime ipsam dignissimos, tempore culpa iste atque magnam, modi obcaecati voluptatem optio voluptate
+                    et, nemo nesciunt tempora quisquam. Hic libero, quasi vel reprehenderit cumque earum aliquam impedit
+                    aperiam asperiores quas.</p>
+                <p>Dicta ipsum neque cumque fuga corporis, ea placeat. Quibusdam ipsa nisi sit beatae quia molestias
+                    sint obcaecati tenetur? Sint repudiandae neque minus eligendi consequuntur nam voluptates est
+                    repellendus iure! Deserunt.</p>
+            </section>
+            <aside>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+            </aside>
+            <footer>
+                &COPY; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+</body>
+
+</html>
